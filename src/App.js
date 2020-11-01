@@ -1,24 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import DropDownButton from './components/DropDownButton';
+import DropDownComponents from './components/DropDownComponents';
 
 function App() {
+
+  const [show, setShow] = React.useState(false);
+
+  const units = ["Metric (cm)", "Imperial (in)"]
+
+  const UnitButton = () => {
+    return (
+      <div className="relative m-4">
+        <DropDownButton onClick={() => setShow(show => !show)}/>
+        {show && <DropDownComponents data={units}/>}
+      </div>
+    )
+  }
+
   return (
+    <React.Fragment>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UnitButton/>
     </div>
+    </React.Fragment>
   );
 }
 
