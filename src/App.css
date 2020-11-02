@@ -92,9 +92,13 @@ label {
 }
 
 .result-card {
-  align-content: center;
   text-align: center;
-  position: center;
+  border: 2px solid #c70000;
+  border-radius: 20px;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 10px;
 }
 
 .result-card-image {
