@@ -22,10 +22,6 @@
   text-align: center;
 }
 
-#components-box {
- 
-}
-
 button {
   background-color: #ffffff;
   border: none;
@@ -40,7 +36,7 @@ button {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-button:focus{
+button:focus {
   outline: none;
 }
 button:hover {
@@ -51,7 +47,6 @@ button:active {
   position: relative;
   top: 1px;
 }
-
 
 #unit-button {
   background-color: #fe5959;
@@ -64,9 +59,8 @@ button:active {
   font-size: 16px;
   padding: 10px 15px;
   text-decoration: none;
-  margin-top: 200px;
 }
-#unit-button:focus{
+#unit-button:focus {
   outline: none;
 }
 #unit-button:hover {
@@ -96,3 +90,30 @@ label {
   font-family: sans-serif;
   color: #c70000;
 }
+
+.result-card {
+  align-content: center;
+  text-align: center;
+  position: center;
+}
+
+.result-card-image {
+  width: 100px;
+}
+
+.scale-logo {
+  width: 150px;
+}
+
+.name-logo {
+  width: 350px;
+  object-fit: cover;
+  object-position: 0% 25%;
+}
+
+.big-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
