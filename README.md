@@ -5,6 +5,7 @@ URL https://bmi-calculator.alissanguyen.dev/
 
 # Features
 
-- Calculating your BMI (Body Mass Index)
-- Knowing what your BMI indicate.
+- Calculate your BMI (Body Mass Index)
+- Support both metric and imperial units.
+- Know what your BMI indicates for your health.
 
