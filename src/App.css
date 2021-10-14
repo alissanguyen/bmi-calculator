@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,6 +15,7 @@
 
 .calculate-form {
   text-align: center;
+  padding: 2%;
 }
 
 button {
@@ -28,7 +24,7 @@ button {
   border-radius: 20px;
   display: inline-block;
   cursor: pointer;
-  color: #c70000;
+  color: black;
   font-family: sans-serif;
   font-size: 16px;
   padding: 10px 15px;
@@ -40,7 +36,7 @@ button:focus {
   outline: none;
 }
 button:hover {
-  background-color: #fa9aaf;
+  background-color: #d6e2fab6;
   color: black;
 }
 button:active {
@@ -49,7 +45,7 @@ button:active {
 }
 
 #unit-button {
-  background-color: #fe5959;
+  background-color: #597ffeab;
   border: none;
   border-radius: 20px;
   display: inline-block;
@@ -64,7 +60,7 @@ button:active {
   outline: none;
 }
 #unit-button:hover {
-  background-color: #c70000;
+  background-color: #1d39d8b4;
 }
 #unit-button:active {
   position: relative;
@@ -74,8 +70,8 @@ button:active {
 input {
   width: 250px;
   height: 32px;
-  border-radius: 20px;
-  border: 2px solid #ff2929;
+  border-radius: 10px;
+  border: 2px solid #1a0a0a83;
   font-family: sans-serif;
   font-size: 16px;
   padding-left: 15px;
@@ -88,36 +84,30 @@ input:focus {
 
 label {
   font-family: sans-serif;
-  color: #c70000;
+  color: #000000;
 }
 
 .result-card {
   text-align: center;
-  border: 2px solid #c70000;
-  border-radius: 20px;
+  border: 2px solid rgb(171, 171, 255);;
+  border-radius: 5%;
   width: 300px;
   margin: auto;
-  padding: 20px;
+  padding: 5%;
   padding-bottom: 10px;
+  background-color: rgba(188, 188, 243, 0.137);
 }
 
 .result-card-image {
   width: 100px;
 }
 
-.scale-logo {
-  width: 150px;
+.app-title {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
-.name-logo {
-  width: 350px;
-  object-fit: cover;
-  object-position: 0% 25%;
-}
 
-.big-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 

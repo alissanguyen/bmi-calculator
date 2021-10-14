@@ -36,7 +36,7 @@ const BMICalculatingForm = (props) => {
   const [showResult, setShowResult] = React.useState(false);
 
   const heightUnit = props.unit === UnitOfMeasure.METRIC ? "m" : "in";
-  const weightUnit = props.unit === UnitOfMeasure.METRIC ? "kg" : "lbs";
+  const weightUnit = props.unit === UnitOfMeasure.METRIC ? "kg" : "lb";
 
   const BMI = calculateBMI(props.unit, weight, height);
 

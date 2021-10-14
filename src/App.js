@@ -2,8 +2,7 @@ import "./App.css";
 import React from "react";
 import DropDownButton from "./components/DropDownButton";
 import BMICalculatingForm from "./components/BMICalculatingForm";
-import logo1 from "../src/body-scale.png";
-import logo2 from "../src/logo2.png";
+
 import { UnitOfMeasure } from "./constants";
 
 function App() {
@@ -14,10 +13,7 @@ function App() {
   return (
     <React.Fragment>
       <div className="App">
-        <div className="big-logo">
-          <img className="scale-logo" src={logo1} alt="" />
-          <img className="name-logo" src={logo2} alt="BMI-Calculator" />
-        </div>
+        <p className="app-title">BMI Calculator</p>
         <DropDownButton onClick={() => setShow((show) => !show)} />
         {show && (
           <div id="components-box">
@@ -28,7 +24,7 @@ function App() {
             </div>
             <div>
               <button onClick={() => setUnit(UnitOfMeasure.IMPERIAL)}>
-                Imperial (in, lbs)
+                Imperial (in, lb)
               </button>
             </div>
           </div>
